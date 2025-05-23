@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="english">
+    <head>
+        <title>Colspan and rowspan in table</title>
+        <style>
+            table{
+                width:100%;
+                border-collapse: collapse;
+            }
+            td{
+                width:300px;
+                height:200px;
+                background-color: #7F8CAA;
+                border-style: solid;
+                border-color: black;
+            }
+            .color-one{
+                background-color: #096B68;
+            }
+            .color-two{
+                background-color: #6DE1D2;
+            }
+            .color-three{
+                background-color:#129990;
+            }
+            .color-four{
+                background-color: #129990;
+            }
+            .color-five{
+                background-color: #096B68;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <!--row one-->
+            <tr>
+                <td colspan="5" class="color-one">1</td>
+                
+                </tr>
+            <!--row two-->
+            <tr>
+                <td rowspan="3" style="width:30%;" class="color-two">6</td>
+
+                <td colspan="3" class="color-three">8</td>
+                
+                
+            </tr>
+            <!--row three-->
+            <tr>
+                <td colspan="3" class="color-four">11</td>
+                
+                
+            </tr>
+            <!--row four-->
+            <tr>
+                <td colspan="3" class="color-five">16</td>
+                
+                
+            </tr>
+        </table>
+    </body>
+</html>
