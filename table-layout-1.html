@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="english">
+    <head>
+        <title>table layout CSS</title>
+        <style>
+            .magic-area{
+                width:400px;
+                height:20px;
+            }
+            .magic-button{
+                width:400px;
+                height:20px;
+                background-color: black;
+                color:white;
+                text-align: center;
+                
+            }
+            .magic-box{
+                background-color:#261FB3;
+                width: 300px;
+                height:300px;
+                border-radius: 10px;
+                color:white;
+               margin-left: 10%;
+               margin-right: 10%;
+                display: none;
+            }
+            .magic-button:hover + .magic-box{
+                display:block;
+            }
+            .magic-box-item{
+                width:80%;
+                height:500px;
+                background-color:cornflowerblue;
+                border-radius: 10px;
+                margin-left: 10%;
+                margin-right: 10%;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="magic-area"></div>
+        <div class="magic-button">Hover to Reveal the Magic box!</div>
+        <div class="magic-box">
+            <h1>Magic Box One</h1>
+            <span>Hover to Reveal the Magic box</span>
+            <div class="magic-box-item">
+            </div>
+        </div>
+    </body>
+</html>
