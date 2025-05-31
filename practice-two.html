@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>one</title>
+    <style>
+      body {
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        height: 100%;
+        width: 100%;
+      }
+
+      .header {
+        height: 10%;
+        background-color: rgb(49, 49, 78);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        color: white;
+      }
+
+      .header-one {
+        height: 100%;
+        text-align: left;
+        margin-top: 22px;
+        margin-left: 30px;
+        font-size: 25px;
+      }
+
+      .header-two {
+        height: 100%;
+        text-align: right;
+        margin-top: 25px;
+        margin-right: 20px;
+      }
+
+      .main {
+        height: 80%;
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-gap: 10px;
+      }
+
+      .main-one {
+        height: 100%;
+      }
+
+      .main-section {
+        height: 97%;
+        width: 95%;
+        margin-top: 10px;
+        margin-left: 10px;
+        background-color: rgb(49, 49, 78);
+        border-radius: 10px;
+        color: white;
+      }
+
+      .main-section-text {
+        display: grid;
+        align-content: center;
+        text-align: left;
+        padding: 40px;
+      }
+      .main-two {
+        height: 100%;
+      }
+
+      .card-section {
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 17px;
+      }
+
+      .card {
+        height: 78%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-top: 10px;
+        text-align: left;
+        padding: 20px;
+      }
+
+      .main-three {
+        height: 100%;
+      }
+
+      .main-section-three {
+        height: 97%;
+        width: 95%;
+        margin-top: 10px;
+        margin-left: 10px;
+        background-color: rgb(116, 116, 123);
+        border-radius: 10px;
+      }
+
+      .threetext {
+        text-align: left;
+        padding: 40px;
+        font-size: 20px;
+      }
+
+      .footer {
+        height: 10%;
+        background-color: rgb(200, 205, 204);
+        text-align: center;
+        align-content: center;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- header start -->
+      <div class="header">
+        <div class="header-one">
+          <span>My Dashboard</span>
+        </div>
+        <div class="header-two">
+          <span>Admin</span>
+        </div>
+      </div>
+      <!-- header end -->
+
+      <!-- main section start -->
+      <div class="main">
+        <div class="main-one">
+          <div class="main-section">
+            <div class="main-section-text">
+              <h3>Dashboard</h3>
+              <h3>Analytics</h3>
+              <h3>Settings</h3>
+              <h3>Files</h3>
+              <h3>Logout</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- main two -->
+        <div class="main-two">
+          <div class="card-section">
+            <div class="card">Sales Report</div>
+            <div class="card">Schedule</div>
+            <div class="card">Messages</div>
+            <div class="card">Alerts</div>
+          </div>
+        </div>
+
+        <!-- main three -->
+        <div class="main-three">
+          <h2 class="threetext">Notifications</h2>
+          
+          <div class="main-section-three">
+            <div class="text-one"></div>
+            <div class="text-two"></div>
+            <div class="text-three"></div>
+
+            <div class="two"></div>
+          </div>
+        </div>
+      </div>
+      <!-- main section end -->
+
+      <!-- footer -->
+      <div class="footer">@ 2025 Admin panel</div>
+    </div>
+  </body>
+</html>
